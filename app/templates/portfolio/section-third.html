@@ -1,0 +1,18 @@
+
+<section id="contacto">
+    <div class="four">
+        <div class='leftpad'>
+            <h3>Ahora o nunca trabajemos juntos</h3> 
+            <p>Daré mi mejor esfuerzo! para aprender, aportar valor y que tengamos una fructifera relación a largo plazo.</p>
+        </div>
+    
+        <div  class="contacto">
+            <form class='contact-form' method='post' action='{{ url_for('portfolio.mail') }}'>
+            <input name='name' placeholder="Nombre" required />
+            <input name='email' placeholder="Correo" required  type='email' />
+            <textarea placeholder="Mensaje" name='message' required minlength="10"></textarea>
+            <button class='btn'>Enviar</button>
+            </form>
+        </div>
+    </div>    
+</section>

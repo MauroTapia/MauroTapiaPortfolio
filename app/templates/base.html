@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>{% block title %}{% endblock %} - Portafolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+    <section>
+         <nav>
+            <a class="logo">Mauro</a>
+          <ul class="enlace-menu">
+          <li><a href='#portfolio'>Portfolio</a></li>
+          <li><a href='#about'>About</a></li>
+          <li><a href='#contacto'>Contacto</a></li>
+          </ul>
+         </nav>
+    </section>
+  </header>
+  <section>
+    {% block content %}
+    {% endblock %}
+  </section>
+    <footer>
+        <section>
+            <div class="ult">
+                <h3>Contáctame</h3>
+                <p>O tambien puedes seguirme en mis redes sociales.</p>
+                <a target="_blank" href='https://www.linkedin.com/in/maurotapia/'><img class='social' width='25' src='./static/linkedin.png' /></a>
+                <a target="_blank" href='https://www.instagram.com/_maurotapia'><img class='social' width='25' src='./static/instagram.png' /></a>
+               
+            </div>
+            <div class="creado">
+                <p>Creado con 🧡 por Mauro Tapia </p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

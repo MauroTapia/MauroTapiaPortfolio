@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+ 
+{% block title %}
+  MauroTapia
+{% endblock %}
+
+{% block content %}
+    <section>
+      <div class="First">
+        <h1>Soy Mauro</h1>
+        <h2>Contento de verte!</h2>
+        <p>Construyo aplicaciones en Python dinámicas utilizando bases de datos relacionales</p>
+        <a href='#contacto' class='btn'>Contáctame</a>
+      </div>
+    </section>
+{% include 'portfolio/section-firt.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+{% endblock %}
